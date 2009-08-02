@@ -3,7 +3,7 @@ use warnings;
 
 package Test::Expectation;
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 use Carp qw(croak);
 use Test::Strict;
@@ -150,7 +150,7 @@ This is a blatant copy of Ruby's RSpec framework. Having used that pretty freque
 
  before_each(some coderef) - Some code that will be executed before each "it_should" block.
 
- after_head(some coderef) - Some code that will be executed *after* each "it_should" block.
+ after_each(some coderef) - Some code that will be executed *after* each "it_should" block.
 
 =head1 METHODS
 
@@ -175,6 +175,8 @@ The method you define in your "expect"/"does_not_expect" will be replaced with a
 Each assertion made with expects or does_not_expect will be a test. If the asseertions are not met during the "it_should" block, then the test will fail.
 
 =head1 SEE ALSO
+
+ - Project's GitHub page: http://github.com/moowahaha/p5-Test-Expectation/
 
  - RSpec: http://rspec.info/
 
